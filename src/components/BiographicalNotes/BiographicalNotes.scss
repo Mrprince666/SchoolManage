@@ -1,0 +1,99 @@
+.BiographicalN{
+  margin: 20px;
+  margin-right: 0;
+  margin-bottom: 50px;
+
+  &_top{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    &_name{
+      font-size: 18px;
+      font-weight: 500;
+      margin-right: 30px;
+    }
+
+    &_list{
+      display: flex;
+      column-gap: 15px;
+    }
+
+    button{
+      border: 0;
+      outline: 0;
+      padding: 5px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &_active{
+      opacity: 1 !important;
+    }
+
+    &_unread{
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    &_pass{
+      background-color: #67C23A;
+      color: white;
+    }
+
+    &_reject{
+      background-color: #F56C6C;
+      color: white;
+    }
+
+    &_interview{
+      background-color: #E6A23C;
+      color: white;
+    }
+  }
+
+  &_table{
+    &_edit{
+      border-left: 1px solid #ebeef5;
+    }
+
+    &_check{
+      margin-left: 20px;
+      cursor: pointer;
+
+      a{
+        color: var(--primary-color);
+      }
+    }
+
+    button{
+      border: 0;
+      outline: 0;
+      padding: 5px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &_pass{
+      background-color: #67C23A;
+      color: white;
+      margin-right: 5px;
+    }
+
+    &_reject{
+      background-color: #F56C6C;
+      color: white;
+      margin-right: 5px;
+    }
+
+    &_interview{
+      background-color: #E6A23C;
+      color: white;
+    }
+  }
+
+  &_pagination{
+    margin-top: 20px;
+  }
+}

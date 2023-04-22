@@ -1,0 +1,136 @@
+.ActivityAdd{
+  margin-left: 30px;
+  margin-top: 30px;
+
+  &_header{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &_content{
+    margin-left: 10px;
+  }
+
+  &_list {
+
+    &_item{
+      display: inline-block;
+      margin-right: 60px;
+      margin-bottom: 30px;
+
+      &_label{
+        margin-right: 15px;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '*';
+          color: red;
+          left: -10px;
+        }
+      }
+
+      &_input{
+        height: 20px;
+        width: 250px;
+        padding: 3px 5px;
+        outline: none;
+        border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+
+        &:focus{
+          border: 1px solid var(--primary-color);
+        }
+      }
+
+    }
+
+  }
+
+  &_des{
+    margin-bottom: 20px;
+
+    textarea{
+      width: 700px;
+      height: 40px;
+      font-size: 16px;
+      outline: none;
+      padding: 3px 5px;
+      border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+
+      &:focus{
+        border: 1px solid var(--primary-color);
+      }
+    }
+
+    &_label{
+      display: inline-block;
+      margin-bottom: 15px;
+      position: relative;
+
+      &::before{
+        position: absolute;
+        content: '*';
+        left: -10px;
+        color: red;
+      }
+    }
+  }
+
+  &_foot{
+    margin-left: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &_right{
+      margin-right: 100px;
+    }
+
+    &_add{
+      border: none;
+      outline: none;
+      padding: 8px 25px;
+      cursor: pointer;
+      color: white;
+      background-color: var(--primary-color);
+      border-radius: 3px;
+    }
+  }
+
+  &_goback{
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #909399;
+    border-radius: 3px;
+    margin-right: 20px;
+  }
+
+  &_define{
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  &_cancel{
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #F56C6C;
+    border-radius: 3px;
+  }
+
+  &_center{
+    text-align: center;
+    font-size: 18px;
+  }
+}

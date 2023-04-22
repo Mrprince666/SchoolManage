@@ -1,0 +1,37 @@
+.CommentM{
+  margin: 20px;
+  margin-right: 0;
+  margin-bottom: 50px;
+
+  &_top{
+    margin-bottom: 20px;
+
+    &_add{
+      background-color: var(--primary-color);
+      color: white;
+      border: 0;
+      outline: 0;
+      padding: 5px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  &_table{
+    &_edit{
+      border-left: 1px solid #ebeef5;
+    }
+  }
+
+  &_pagination{
+    margin-top: 20px;
+  }
+
+  &_limit{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}

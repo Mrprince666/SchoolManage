@@ -1,0 +1,108 @@
+.MPUserInfo{
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: 20px;
+
+  &_title{
+    // background-color: #fff;
+    padding: 20px;
+  }
+
+  &_content{
+    padding: 20px;
+    // background-color: rgba(0, 146, 65, 0.1);
+    color: #495060;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    row-gap: 20px;
+  }
+
+  &_item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &_select{
+      width: 320px !important;
+      height: 40px !important;
+    }
+
+    &_title{}
+
+    &_message{
+      // background-color: #fff;
+      border: 0;
+      height: 30px;
+      width: 300px;
+      padding: 5px 10px;
+      border-radius: 3px;
+
+      &:focus{
+        outline: 1px solid rgb(0, 146, 65);
+      }
+    }
+  }
+
+  &_flooter{
+    // background-color: #fff;
+    padding: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &_list{
+      
+    }
+
+    &_cancel{
+      background-color: #fff;
+      border: 1px solid rgb(0, 146, 65);
+      color: rgb(0, 146, 65);
+      padding: 8px 25px;
+      margin-right: 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    &_define{
+      background-color: #fff;
+      border: none;
+      background-color: rgb(0, 146, 65);
+      color: #fff;
+      padding: 8px 25px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+
+  &_password{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    
+    input {
+      width: 200px;
+      height: 25px;
+      outline: none;
+      border: 1px solid #666;
+      border-radius: 3px;
+      padding: 3px;
+
+      &:focus{
+        border: 1px solid rgb(0, 146, 65);
+      }
+    }
+  }
+
+  &_pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_img{
+      margin-right: 20px;
+    }
+  }
+}
